@@ -1,0 +1,27 @@
+{
+  "name": "npm-package-template",
+  "version": "1.0.0",
+  "description": "Base template to create NPM packages that are written in CoffeeScript and have working tests",
+  "main": "lib/index.js",
+  "scripts": {
+    "install": "./node_modules/.bin/coffee -o lib -c src",
+    "prepublish": "./node_modules/.bin/coffee -o lib -c src",
+    "test": "mocha --compilers coffee:'./node_modules/coffee-script/lib/coffee-script/register'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://shamoons@github.com/shamoons/npm-package-template.git"
+  },
+  "author": "Shamoon Siddiqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shamoons/npm-package-template/issues"
+  },
+  "homepage": "https://github.com/shamoons/npm-package-template",
+  "dependencies": {
+    "coffee-script": "^1.8.0"
+  },
+  "devDependencies": {
+    "should": "^4.4.2"
+  }
+}
